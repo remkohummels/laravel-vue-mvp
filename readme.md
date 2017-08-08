@@ -1,7 +1,26 @@
-# About Fready Application
+# Laravel + Vue.js MVP
 ***
 
-Someone can write a general description briefly.
+The beta version for restaurant management system.
+
+Key Technologies:
+
+- Laravel v5.4
+
+- Vue.js v2.3.3
+
+- Vue-Resource v1.3.4
+
+- Vuex v2.3.1
+
+- Vue-Router v2.5.3
+
+- Moment.js v2.18.1
+
+- Bootstrap-Sass v3.3.7
+
+- Dockerize the DEV/Staging environments (compatible with Linux/Debian, MacOS, Windows 7)
+
 
 ## Prerequisites for Dev Environment
 
@@ -59,8 +78,6 @@ After running all services with docker-compose, you can run all artisan commands
 
 For example, run `$ docker-compose exec web php /var/www/ccpp-app/artisan key:generate`.
 
-![Command Break Down](https://bytebucket.org/snippets/dmatt522/pX9BM/raw/e004038c2c248005a894e9b5dd02bfa2f5181196/1-XtLoc1ZwMLm1XRVY1ifQuA.png)
-
 - If some database migration or seeder was changed by some commits, run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate:reset`. 
 Then you can run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate --seed` to make all migrations and seeding again in the fresh database. 
 
@@ -93,16 +110,6 @@ Then you can run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrat
 
 - Trim trailing white space.
 
-## See the below DB diagrams with different layouts
-
-[Circular](https://bytebucket.org/oibitbucket/ccpp-app/raw/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/diagram_circular.png?token=19cd53ef41dc8e7682ab44e7961139ac7908619e), 
-[Hierarchic Group](https://bytebucket.org/oibitbucket/ccpp-app/raw/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/diagram_hierarchic_group.png?token=f4136a48036a99d9a7e5f7d67f94f3f60457976d), 
-[Organic](https://bytebucket.org/oibitbucket/ccpp-app/raw/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/diagram_organic.png?token=326e9b7ff72179a97dead4ba4a6f8b4d986aa724), 
-[Orthogonal](https://bytebucket.org/oibitbucket/ccpp-app/raw/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/diagram_orthogonal.png?token=479aea52fed9c26fbc0edb1d81566436fc5c13c4), 
-[Directed Orthogonal](https://bytebucket.org/oibitbucket/ccpp-app/raw/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/diagram_directed_orthogonal.png?token=7d147be4b4d70b09961060cb774509a32e22b20b)
-
-The diagram resources are stored in [./diagram](https://bitbucket.org/oibitbucket/ccpp-app/src/60566cacfcb11c9d33347036fd4fe704b1676ee6/diagram/?at=staging) folder.
-
 ## Tips for VueJS
 
 - Vue.js can be written in the recommended ECMAScript 6.
@@ -110,4 +117,4 @@ The diagram resources are stored in [./diagram](https://bitbucket.org/oibitbucke
 - This command `$ npm run watch` can help you with compiling the Vue/JS/SCSS/Images changes immediately. 
 After you write/change some code, please hit `CTRL + S` in your IDE. Then you can see the compiling process via terminal.
 
-- See the [Laravel <-> Vue & Vuex in our SPA](https://bitbucket.org/oibitbucket/ccpp-app/wiki/Laravel-Vue-Vuex)
+- See the [Laravel <-> Vue & Vuex in our SPA]
