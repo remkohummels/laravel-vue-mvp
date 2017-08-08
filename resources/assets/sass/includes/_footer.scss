@@ -1,0 +1,35 @@
+#footer_section {
+    color: #fff;
+    background: rgba(154, 10, 0, 1);
+    box-shadow: 0px 2px 4px 0px rgba(1, 1, 1, 0.2);
+    .container {
+        padding: 19px 0;
+        opacity: 0.8;
+        .footer-logo {
+            text-align: right;
+            @media only screen and (max-width: 992px) {
+                text-align: center;
+            }
+            img {
+                width: 96px;
+                height: 81px;
+                opacity: 0.5;
+            }
+        }
+        .copy-right {
+            padding-top: 27px;
+            @media only screen and (max-width: 992px) {
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                color: #fff;
+                font-size: 15px;
+                opacity: 0.8;
+                a {
+                    color: #4cb050;
+                }
+            }
+        }
+    }
+}

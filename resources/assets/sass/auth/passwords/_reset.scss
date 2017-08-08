@@ -1,0 +1,82 @@
+#password_reset {
+  background-image: url('../images/login_background.jpg');
+  background-size: 100% auto;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  .login-logo {
+    img {
+      width: 260px;
+      margin-bottom: 60px;
+      @media screen and (max-width: 450px) {
+        width: 200px;
+      }
+    }
+  }
+  .login-form {
+    margin: auto;
+    width: 500px;
+    background: rgba(227, 37, 38, 0.5);
+    @media screen and (max-width: 450px) {
+      width: 320px;
+    }
+    @media screen and (min-width: 451px) and (max-width: 550px) {
+      width: 400px;
+    }
+    border-radius: 15px;
+    .title {
+      margin-top: 40px;
+      margin-bottom: 15px;
+      font-size: 38px;
+      color: white;
+      @media screen and (max-width: 450px) {
+        font-size: 33px;
+      }
+    }
+    .panel-body {
+      .input {
+        margin-left: 35px;
+        margin-right: 35px;
+        position: relative;
+        .form-control {
+          height: 60px;
+          border-radius: 0;
+          font-size: 16px;
+        }
+      }
+      .submit {
+        .btn {
+          margin-left: 100px;
+          margin-top: 50px;
+          margin-bottom: 40px;
+          width: 260px;
+          height: 50px;
+          border-radius: 0;
+          background-color: #0050A2;
+          border-color: #0050A2;
+          font-size: 18px;
+          @media screen and (max-width: 450px) {
+            width: 150px;
+            margin-left: 68px;
+          }
+          @media screen and (min-width: 451px) and (max-width: 550px) {
+            width: 200px;
+            margin-left: 88px;
+          }
+        }
+      }
+    }
+  }
+  .has-error .form-control {
+    border-color: $blue;
+  }
+  .has-error .help-block {
+    color: $yellow;
+  }
+  .copyright {
+    margin-top: 120px;
+    font-size: 16px;
+    color: white;
+    opacity: .6;
+  }
+}

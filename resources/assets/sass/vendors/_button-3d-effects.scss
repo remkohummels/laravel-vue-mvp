@@ -1,0 +1,97 @@
+.btn3d {
+    position:relative;
+    top: -6px;
+    border:0;
+    transition: all 40ms linear;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-left:2px;
+    margin-right:2px;
+    &:active:focus,
+    &:focus:hover,
+    &:focus {
+        -moz-outline-style:none;
+        outline:medium none;
+    }
+    &:active,
+    &.active {
+        top:2px;
+    }
+    &.btn-white {
+        color: #666666;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0,0,0,.2);
+        background-color:#fff;
+    }
+    &.btn-white:active,
+    &.btn-white.active {
+        color: #666666;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+        background-color:#fff;
+    }
+    &.btn-default {
+        color: #666666;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255,255,255,0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0,0,0,.2);
+        background-color:#f9f9f9;
+    }
+    &.btn-default:active,
+    &.btn-default.active {
+        color: #666666;
+        box-shadow:0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,.1);
+        background-color:#f9f9f9;
+    }
+    &.btn-primary {
+        box-shadow:0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#4274D7;
+    }
+    &.btn-primary:active,
+    &.btn-primary.active {
+        box-shadow:0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color:#4274D7;
+    }
+    &.btn-success {
+        box-shadow:0 0 0 1px #31c300 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #5eb924, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#78d739;
+    }
+    &.btn-success:active,
+    &.btn-success.active {
+        box-shadow:0 0 0 1px #30cd00 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color: #78d739;
+    }
+    &.btn-info {
+        box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #348FD2, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#39B3D7;
+    }
+    &.btn-info:active,
+    &.btn-info.active {
+        box-shadow:0 0 0 1px #00a5c3 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color: #39B3D7;
+    }
+    &.btn-warning {
+        box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #D79A34, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#FEAF20;
+    }
+    &.btn-warning:active,
+    &.btn-warning.active {
+        box-shadow:0 0 0 1px #d79a47 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color: #FEAF20;
+    }
+    &.btn-danger {
+        box-shadow:0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#D73814;
+    }
+    &.btn-danger:active,
+    &.btn-danger.active {
+        box-shadow:0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color: #D73814;
+    }
+    &.btn-magick {
+        color: #fff;
+        box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0,0,0,0.5);
+        background-color:#bb39d7;
+    }
+    &.btn-magick:active,
+    &.btn-magick.active {
+        box-shadow:0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+        background-color: #bb39d7;
+    }
+}

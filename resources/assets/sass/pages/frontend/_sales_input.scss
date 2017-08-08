@@ -1,0 +1,340 @@
+.component {
+    #frontend_sales_input {
+        .section-output {
+            margin-bottom: 10px;
+            @media only screen and (max-width: 767px) {
+                text-align: center;
+            }
+            @media only screen and (max-width: 400px) {
+                text-align: left;
+            }
+            a {
+                margin-left: 50px;
+                color: #727272;
+                img {
+                    padding-left: 10px;
+                }
+            }
+        }
+        .comment {
+            font-size: 18px;
+            line-height: 2;
+            hr {
+                border-top: 1px solid #79766E;
+            }
+            @media only screen and (min-width: 767px) and (max-width: 991px) {
+                font-size: 17px;
+            }
+        }
+        .timevalues {
+            padding: 8px 30px 20px 30px;
+            .top-save {
+                .btn {
+                    background: rgba(0, 80, 162, 1);
+                    margin-bottom: 15px;
+                    height: 30px;
+                    width: 60px;
+                    color: white;
+                    font-size: 12px;
+                    &:active {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+            .bottom-save {
+                .btn {
+                    background: rgba(0, 80, 162, 1);
+                    margin-top: 15px;
+                    height: 30px;
+                    width: 60px;
+                    color: white;
+                    font-size: 12px;
+                    &:active {
+                        margin-top: 25px;
+                        margin-bottom: -10px;
+                    }
+                }
+            }
+            .header {
+                background: rgba(255,255,255,1);
+                border-top: 1px solid rgba(204,204,204,1);
+                border-left: 1px solid rgba(204,204,204,1);
+                border-right: 1px solid rgba(204,204,204,1);
+                font-size: 17px;
+                color: black;
+                padding: 10px 0;
+            }
+            .body {
+                border-left: 1px solid rgba(204,204,204,1);
+                border-right: 1px solid rgba(204,204,204,1);
+                border-bottom: 1px solid rgba(204,204,204,1);
+                height: 324px;
+                overflow-x: hidden;
+                overflow-y: scroll;
+                .odd {
+                    background: rgba(240,240,240,1);
+                    padding: 3px 0;
+                    .time {
+                        padding-top: 4px;
+                        padding-left: 50px;
+                        @media screen and (max-width: 1200px) {
+                            padding-left: 20px;
+                        }
+                        @media screen and (max-width: 992px) {
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-left: 50px;
+                        }
+                        @media screen and (max-width: 599px) {
+                            padding-left: 30px;
+                        }
+                        @media screen and (max-width: 520px) {
+                            padding-left: 20px;
+                        }
+                    }
+                    input {
+                        width: 73px;
+                        height: 30px;
+                        text-align: right;
+                        padding-right: 2px;
+                        @media screen and (max-width: 992px) {
+                            margin-left: -20px;
+                        }
+                    }
+                    .slider {
+                        padding-top: 4px;
+                        @media screen and (max-width: 360px) {
+                            padding-left: 25px;
+                        }
+                        .vue-slider-wrap {
+                            .vue-slider {
+                                background: rgba(203,203,203,1);
+                                .vue-slider-process {
+                                    background: rgba(11,166,207,1);
+                                }
+                            }
+                        }
+                    }
+                }
+                .even {
+                    background: rgba(255,255,255,1);
+                    padding: 3px 0;
+                    .time {
+                        padding-top: 4px;
+                        padding-left: 50px;
+                        @media screen and (max-width: 1200px) {
+                            padding-left: 20px;
+                        }
+                        @media screen and (max-width: 992px) {
+                            font-size: 13px;
+                        }
+                        @media screen and (max-width: 767px) {
+                            padding-left: 50px;
+                        }
+                        @media screen and (max-width: 599px) {
+                            padding-left: 30px;
+                        }
+                        @media screen and (max-width: 520px) {
+                            padding-left: 20px;
+                        }
+                    }
+                    input {
+                        width: 73px;
+                        height: 30px;
+                        text-align: right;
+                        padding-right: 2px;
+                        @media screen and (max-width: 992px) {
+                            margin-left: -20px;
+                        }
+                    }
+                    .slider {
+                        padding-top: 4px;
+                        @media screen and (max-width: 360px) {
+                            padding-left: 25px;
+                        }
+                        .vue-slider-wrap {
+                            .vue-slider {
+                                background: rgba(203,203,203,1);
+                                .vue-slider-process {
+                                    background: rgba(11,166,207,1);
+                                }
+                            }
+                        }
+                    }
+                }
+                .piece {
+                    background: rgba(240,240,240,1);
+                    height: 15px;
+                }
+            }
+        }
+        .actions {
+            padding-top: 70px;
+            @media screen and (max-width: 768px) {
+                padding-top: 15px;
+            }
+            .review {
+                font-size: 17px;
+                margin-bottom: 15px;
+            }
+            .edit {
+                font-size: 17px;
+                margin-bottom: 10px;
+                div {
+                    & > span {
+                        float: left;
+                        padding-right: 15px;
+                        padding-top: 10px;
+                    }
+                    & > .vdp-datepicker {
+                        float: left;
+                        & > div {
+                            & > span {
+                                &.vdp-datepicker__calendar-button {
+                                    float: right;
+                                    padding-right: 5px;
+                                    padding-top: 0;
+                                    i {
+                                        font-size: 35px;
+                                        padding: 4px 8px;
+                                    }
+                                }
+                            }
+                            & > input {
+                                width: 115px;
+                                padding: 9px 12px;
+                            }
+                            &.vdp-datepicker__calendar {
+                                margin-left: -50px;
+                                @media screen and (max-width: 360px) {
+                                    width: 270px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .ignore {
+                margin-bottom: 30px;
+            }
+            .done {
+                div {
+                    button {
+                        height: 97px;
+                        border-radius: 15px;
+                        background: linear-gradient(to bottom, #3373B5 25%, #0050A2 25%);
+                        box-shadow: 0 0 0 1px #005095 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #043F7B, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+                        &:active,
+                        &.active {
+                            box-shadow:0 0 0 1px #005095 inset, 0 0 0 1px rgba(255,255,255,0.15) inset, 0 1px 3px 1px rgba(0,0,0,0.3);
+                        }
+                        @media only screen and (max-width: 480px) {
+                            height: 82px;
+                        }
+                        @media only screen and (max-width: 400px) {
+                            height: 77px;
+                        }
+                        @media only screen and (max-width: 360px) {
+                            height: 72px;
+                        }
+                        strong {
+                            position: absolute;
+                            left: 15%;
+                            font-size: 18px;
+                            top: 38%;
+                            @media only screen and (max-width: 1024px) {
+                                left: 18%;
+                                font-size: 16px;
+                                top: 41%;
+                            }
+                            @media only screen and (max-width: 768px) {
+                                left: 13%;
+                                font-size: 16px;
+                                top: 38%;
+                            }
+                            @media only screen and (max-width: 480px) {
+                                left: 15%;
+                                font-size: 14px;
+                            }
+                            @media only screen and (max-width: 400px) {
+                                left: 18%;
+                                font-size: 12px;
+                            }
+                            @media only screen and (max-width: 360px) {
+                                top: 41%;
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #setUpdateModal {
+            &.fade-scale {
+                transform: scale(0);
+                opacity: 0;
+                -webkit-transition: all .25s linear;
+                -o-transition: all .25s linear;
+                transition: all .25s linear;
+                &.in {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+                .modal-dialog {
+                    top: 25%;
+                    .modal-content {
+                        border-radius: 0;
+                        button.close {
+                            position: absolute;
+                            right: 0;
+                            top: -40px;
+                            color: #9e9d9b;
+                            opacity: 1;
+                            text-shadow: none;
+                            font-size: 40px;
+                            font-weight: normal;
+                        }
+                        .modal-header {
+                            padding: 5px;
+                            background-color: #f0f0f0;
+                            border-bottom: 1px solid #cccccc;
+                            .modal-title {
+                                margin-top: 5px;
+                                text-align: center;
+                                color: rgba(255, 0, 0, 1);
+                            }
+                        }
+                        .modal-body {
+                            padding: 20px;
+                            text-align: center;
+                            .question {
+                                text-transform: none;
+                            }
+                        }
+                        .modal-footer {
+                            padding: 15px 54px;
+                            text-align: center;
+                            background-color: #f0f0f0;
+                            border-top: 1px solid #cccccc;
+                            button {
+                                width: 80px;
+                                margin-top: 0;
+                                font-size: 16px;
+                                border-radius: 0;
+                                background-color: #004fa5;
+                                &.btn-success {
+                                    float: left;
+                                }
+                                &.btn-cancel {
+                                    float: right;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

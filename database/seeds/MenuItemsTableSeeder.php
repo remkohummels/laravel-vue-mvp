@@ -1,0 +1,301 @@
+<?php
+
+use Illuminate\Database\Seeder;
+use Carbon\Carbon;
+
+class MenuItemsTableSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('menu_items')->insert([
+            'name'                      => 'Dark Original',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'OCHD',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 791,
+            'projected_unit_sold_tue'   => 766,
+            'projected_unit_sold_wed'   => 1499,
+            'projected_unit_sold_thur'  => 930,
+            'projected_unit_sold_fri'   => 1057,
+            'projected_unit_sold_sat'   => 935,
+            'projected_unit_sold_sun'   => 948,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'White Original',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'OCHW',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 98,
+            'projected_unit_sold_tue'   => 106,
+            'projected_unit_sold_wed'   => 100,
+            'projected_unit_sold_thur'  => 124,
+            'projected_unit_sold_fri'   => 136,
+            'projected_unit_sold_sat'   => 113,
+            'projected_unit_sold_sun'   => 114,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Dark Spicy',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'SCHD',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 26,
+            'projected_unit_sold_tue'   => 24,
+            'projected_unit_sold_wed'   => 51,
+            'projected_unit_sold_thur'  => 32,
+            'projected_unit_sold_fri'   => 36,
+            'projected_unit_sold_sat'   => 35,
+            'projected_unit_sold_sun'   => 30,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'White Spicy',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'SCHW',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 5,
+            'projected_unit_sold_tue'   => 5,
+            'projected_unit_sold_wed'   => 5,
+            'projected_unit_sold_thur'  => 6,
+            'projected_unit_sold_fri'   => 6,
+            'projected_unit_sold_sat'   => 5,
+            'projected_unit_sold_sun'   => 5,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Original Tenders',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'OT',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 213,
+            'projected_unit_sold_tue'   => 209,
+            'projected_unit_sold_wed'   => 320,
+            'projected_unit_sold_thur'  => 254,
+            'projected_unit_sold_fri'   => 278,
+            'projected_unit_sold_sat'   => 220,
+            'projected_unit_sold_sun'   => 203,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Spicy Tenders',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'ST',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 12,
+            'projected_unit_sold_tue'   => 13,
+            'projected_unit_sold_wed'   => 18,
+            'projected_unit_sold_thur'  => 14,
+            'projected_unit_sold_fri'   => 16,
+            'projected_unit_sold_sat'   => 14,
+            'projected_unit_sold_sun'   => 14,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Biscuits',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'BIS',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 387,
+            'projected_unit_sold_tue'   => 378,
+            'projected_unit_sold_wed'   => 435,
+            'projected_unit_sold_thur'  => 457,
+            'projected_unit_sold_fri'   => 502,
+            'projected_unit_sold_sat'   => 424,
+            'projected_unit_sold_sun'   => 428,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Original Chicken',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'OCH',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 539,
+            'projected_unit_sold_tue'   => 601,
+            'projected_unit_sold_wed'   => 826,
+            'projected_unit_sold_thur'  => 993,
+            'projected_unit_sold_fri'   => 894,
+            'projected_unit_sold_sat'   => 616,
+            'projected_unit_sold_sun'   => 512,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Spicy Chicken',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'SCH',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 656,
+            'projected_unit_sold_tue'   => 731,
+            'projected_unit_sold_wed'   => 1008,
+            'projected_unit_sold_thur'  => 1219,
+            'projected_unit_sold_fri'   => 1091,
+            'projected_unit_sold_sat'   => 754,
+            'projected_unit_sold_sun'   => 622,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Original Filets',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'OF',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 133,
+            'projected_unit_sold_tue'   => 142,
+            'projected_unit_sold_wed'   => 226,
+            'projected_unit_sold_thur'  => 187,
+            'projected_unit_sold_fri'   => 233,
+            'projected_unit_sold_sat'   => 144,
+            'projected_unit_sold_sun'   => 111,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+
+        DB::table('menu_items')->insert([
+            'name'                      => 'Spicy Filets',
+            'active'                    => 1,
+            'required'                  => 1,
+            'active_from'               => '0000-00-00 00:00:00',
+            'active_to'                 => '0000-00-00 00:00:00',
+            'pos_name'                  => 'SF',
+            'uom'                       => 'Piece',
+            'uom_qty_per'               => 1,
+            'uom_type_id'               => 1,
+            'serve_status_id'           => 1,
+            'serve_from'                => '0000-00-00 00:00:00',
+            'serve_to'                  => '0000-00-00 00:00:00',
+            'sync_type_id'              => 1,
+            'sync_date'                 => '0000-00-00 00:00:00',
+            'projected_unit_sold_mon'   => 164,
+            'projected_unit_sold_tue'   => 179,
+            'projected_unit_sold_wed'   => 276,
+            'projected_unit_sold_thur'  => 292,
+            'projected_unit_sold_fri'   => 285,
+            'projected_unit_sold_sat'   => 174,
+            'projected_unit_sold_sun'   => 177,
+            'created_at'                => Carbon::now(),
+            'created_at'                => Carbon::now()
+        ]);
+    }
+}

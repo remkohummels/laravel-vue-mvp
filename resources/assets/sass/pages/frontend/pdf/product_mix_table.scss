@@ -1,0 +1,96 @@
+.container {
+    padding: 0;
+    .row {
+        &.section-header {
+            padding: 20px 0 30px;
+            table {
+                margin: 0;
+                td {
+                    padding: 0;
+                    border-top: none;
+                    &.logo {
+                        width: 150px;
+                        img {
+                            height: 100px;
+                        }
+                    }
+                    &.title {
+                        font-size: 26px;
+                        vertical-align: middle;
+                    }
+                    &.head {
+                        font-size: 16px;
+                        padding: 0;
+                        width: 100px;
+                        vertical-align: bottom;
+                    }
+                    &.body {
+                        font-size: 22px;
+                        padding: 8px 0 0 20px;
+                        width: 200px;
+                        border-top: none;
+                        vertical-align: bottom;
+                        border-bottom: 1px solid #000000;
+                    }
+                }
+            }
+        }
+        &.section-body {
+            table {
+                font-size: 12px;
+                border-bottom: 3px solid #000000;
+                th, td {
+                    text-align: center;
+                    vertical-align: middle;
+                    border-top: 1px solid #000000;
+                }
+                th {
+                    text-transform: capitalize;
+                    &.item-group {
+                        padding: 0;
+                        color: #a94442;
+                        margin-top: 5px;
+                        margin-bottom: 5px;
+                        background-color: #ccc;
+                    }
+                    &.blank-row {
+                        background-color: #ccc;
+                    }
+                }
+                .border-thick {
+                    border: 3px solid #000000;
+                }
+                .border-thick-top {
+                    border-top: 3px solid #000000;
+                }
+                .border-thick-right {
+                    border-right: 3px solid #000000;
+                }
+                .border-thick-bottom {
+                    border-bottom: 3px solid #000000;
+                }
+                .border-thick-left {
+                    border-left: 3px solid #000000;
+                }
+                .border-thin {
+                    border: 1px solid #000000;
+                }
+                .border-thin-top {
+                    border-top: 1px solid #000000;
+                }
+                .border-thin-right {
+                    border-right: 1px solid #000000;
+                }
+                .border-thin-bottom {
+                    border-bottom: 1px solid #000000;
+                }
+                .border-thin-left {
+                    border-left: 1px solid #000000;
+                }
+                .border-disable {
+                    border: none;
+                }
+            }
+        }
+    }
+}
