@@ -24,12 +24,12 @@ Key Technologies:
 
 ## Prerequisites for Dev Environment
 
-Clone repository git@bitbucket.org:oichurchs/dev-infrastructure.git. 
-Then go to ./volumes/datavol folder and clone git@bitbucket.org:oichurchs/ccpp-app.git repository to ccpp-app folder, checkout your dev branch (or staging branch)
+Clone repository git@bitbucket.org:xxx/dev-infrastructure.git. 
+Then go to ./volumes/datavol folder and clone git@bitbucket.org:xxx/laravel-vue-mvp.git repository to laravel-vue-mvp folder, checkout your dev branch (or staging branch)
 
-In the ./volumes/datavol/ccpp-app folder,
+In the ./volumes/datavol/laravel-vue-mvp folder,
 
-1) Create a .env file copying from .env.dev.
+1) Create a .env file copying from .env.dev or .env.example.
 
 2) Run `$ composer install` to install the necessary dependencies.
 
@@ -60,7 +60,7 @@ After running all services of containers, go to the http://localhost.
 
 ## Artisan commands for laravel development process
 
-In the ./volumes/datavol/ccpp-app folder,
+In the ./volumes/datavol/laravel-vue-mvp folder,
 
 - After changing the conf parameters of .env file or modifying the setting of ./config directory: `$ php artisan config:cache`.
 
@@ -76,13 +76,13 @@ NOTE__: In the root folder of dev-infrastructure,
 
 After running all services with docker-compose, you can run all artisan commands with docker-compose. 
 
-For example, run `$ docker-compose exec web php /var/www/ccpp-app/artisan key:generate`.
+For example, run `$ docker-compose exec web php /path/to/artisan key:generate`.
 
-- If some database migration or seeder was changed by some commits, run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate:reset`. 
-Then you can run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate --seed` to make all migrations and seeding again in the fresh database. 
+- If some database migration or seeder was changed by some commits, run `$ docker-compose exec web php /path/to/artisan migrate:reset`. 
+Then you can run `$ docker-compose exec web php /path/to/artisan migrate --seed` to make all migrations and seeding again in the fresh database. 
 
-- If you are encountering with DB rollback, run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate:droptables` to drop all tables in the current database. 
-Then you can run `$ docker-compose exec web php /var/www/ccpp-app/artisan migrate --seed` again.
+- If you are encountering with DB rollback, run `$ docker-compose exec web php /path/to/artisan migrate:droptables` to drop all tables in the current database. 
+Then you can run `$ docker-compose exec web php /path/to/artisan migrate --seed` again.
 
 ## Command Line Tools
 
