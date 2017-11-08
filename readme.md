@@ -22,12 +22,38 @@ Key Technologies:
 - Dockerize the DEV/Staging environments (compatible with Linux/Debian, MacOS, Windows 7)
 
 
-## Prerequisites for Dev Environment
+## Prerequisites for LAMP(Linux/Apache/MySQL/PHP) stack
+
+1) Install PHP 7.0 or 7.1 (reference: [installation in ubuntu](https://tecadmin.net/install-php-7-on-ubuntu/))
+
+2) Install MySQL v5.7 (reference: [installation in ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-14-04))
+
+3) Install Apache2 (reference: [installation in ubuntu](https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04))
+
+4) Install Composer (reference: [installation in ubuntu](https://askubuntu.com/questions/736537/installing-composer))
+
+5) Install Node.js v6.x & Npm v3.10.0 (reference: [installation in ubuntu](https://askubuntu.com/questions/594656/how-to-install-the-latest-versions-of-nodejs-and-npm-for-ubuntu-14-04-lts))
+
+6) Upgrade Npm to v5.3.0 (`$ sudo npm install npm -g`)
+
+7) Install php extensions 
+
+- In the case of PHP v7.0 (`$ sudo apt-get install php7.0-fpm php7.0-dom php7.0-intl php7.0-mbstring php7.0-xml php7.0-mysql php7.0-curl php7.0-mcrypt php7.0-cli php7.0-dev php7.0-zip php7.0-gd`)
+
+- In the case of PHP v7.1 (`$ sudo apt-get install php7.1-fpm php7.1-dom php7.1-intl php7.1-mbstring php7.1-xml php7.1-mysql php7.1-curl php7.1-mcrypt php7.1-cli php7.1-dev php7.1-zip php7.1-gd`)
+
+## Application Setup in the Dev Environment
+
+In the case of Docker usage...
 
 Clone repository git@bitbucket.org:xxx/dev-infrastructure.git. 
 Then go to ./volumes/datavol folder and clone git@bitbucket.org:xxx/laravel-vue-mvp.git repository to laravel-vue-mvp folder, checkout your dev branch (or staging branch)
 
-In the ./volumes/datavol/laravel-vue-mvp folder,
+In the case of LAMP usage...
+
+Clone git@bitbucket.org:xxx/laravel-vue-mvp.git repository to laravel-vue-mvp folder, checkout your dev branch (or staging branch)
+
+In the /laravel-vue-mvp folder,
 
 1) Create a .env file copying from .env.dev or .env.example.
 
@@ -39,10 +65,24 @@ In the ./volumes/datavol/laravel-vue-mvp folder,
 
 5) Run `$ php artisan config:cache` to reflect the .env configuration.
 
-6) To start the scheduler itself, we only need to add one cron job on the server (using the `crontab -e` command), which executes `php /path/to/artisan schedule:run` every minute in the day. 
-To discard the cron output we put `/dev/null 2>&1` at the end of the cronjob expression.
+6) Run `$ php artisan migrate --seed` to migrate and seed the data in DB.
 
-`* * * * * php /path/to/artisan schedule:run 1>> /dev/null 2>&1`
+7) Run `$ php artisan migrate:importdata` to import some data from the external resources. 
+
+8) To start the scheduler itself, we only need to add one cron job on the server (using the `crontab -e` command), which executes `php /path/to/artisan schedule:run` every minute in the day. 
+To discard the cron output we put `/dev/null 2>&1` at the end of the cronjob expression. `* * * * * php /path/to/artisan schedule:run 1>> /dev/null 2>&1`
+
+## Running the application with LAMP stack on localhost
+
+Clone git@bitbucket.org:xxx/laravel-vue-mvp.git repository to laravel-vue-mvp folder, checkout your dev branch (or staging branch)
+
+In the /laravel-vue-mvp folder,
+
+- Create a directory to store the downloadable files(.pdf & .xls) temporarily. (`$ mkdir -p public/files`)
+
+- File permissions (`$ sudo chmod -R 777 storage bootstrap/cache public/files`)
+
+- Create Apache VirtualHost. (reference: [configuration in ubuntu](https://tecadmin.net/install-laravel-framework-on-ubuntu/))
 
 ## Running the application with docker on localhost
 
@@ -56,33 +96,6 @@ In the root folder of dev-infrastructure,
 
 - Stop the running all containers: `$ docker-compose kill`.
 
-After running all services of containers, go to the http://localhost.
-
-## Artisan commands for laravel development process
-
-In the ./volumes/datavol/laravel-vue-mvp folder,
-
-- After changing the conf parameters of .env file or modifying the setting of ./config directory: `$ php artisan config:cache`.
-
-- If some controller changes are not reflected after modifying them: `$ php artisan cache:clear`.
-
-- If some views changes are not working immediately: `$ php artisan view:clear`.
-
-- After changing the JS/SCSS/Vue files, `$ npm run dev`. 
-
-## Docker + Artisan/Composer commands for local development process
-
-NOTE__: In the root folder of dev-infrastructure,
-
-After running all services with docker-compose, you can run all artisan commands with docker-compose. 
-
-For example, run `$ docker-compose exec web php /path/to/artisan key:generate`.
-
-- If some database migration or seeder was changed by some commits, run `$ docker-compose exec web php /path/to/artisan migrate:reset`. 
-Then you can run `$ docker-compose exec web php /path/to/artisan migrate --seed` to make all migrations and seeding again in the fresh database. 
-
-- If you are encountering with DB rollback, run `$ docker-compose exec web php /path/to/artisan migrate:droptables` to drop all tables in the current database. 
-Then you can run `$ docker-compose exec web php /path/to/artisan migrate --seed` again.
 
 ## Command Line Tools
 
